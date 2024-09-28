@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: #25564B;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: #25564B;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0;
+}
+
+nav .logo {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+/* SECTION 1: Hero */
+.hero-section {
+  width: 100%;
+  max-width: 1200px;
+  height: 480px;
+  background: linear-gradient(48deg, #FDF0B5 0%, #FFD8D0 50%);
+  border-radius: 30px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-contant {
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 64px;
+  font-family: 'Fraunces', serif;
+}
+
+.hero-section p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #25564B;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #1b4035;
+}
+
+/* SECTION 2: Services */
+#services {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card {
+  border: 1px solid #25564B;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 10px;
+  flex: 1 1 calc(33% - 20px);
+  /* 1st value (flex-grow: 1): Element can grow to fill available space.
+2nd value (flex-shrink: 1): Element can shrink if needed.
+3rd value (flex-basis: calc(33% - 20px)): Starting width is one-third of the container minus 20px for spacing.
+*/
+  max-width: calc(33% - 20px);
+}
+
+.service-number {
+  font-family: 'Fraunces', serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* SECTION 3: Contact */
+#contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contact-form {
+  max-width: 600px;
+  padding: 40px;
+  border: 1px solid #25564B;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contact-form .input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form .input-row div {
+  flex: 1;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #25564B;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #25564B;
+  border-radius: 10px;
+  background-color: #F4F7F6;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #25564B;
+  border-radius: 10px;
+  background-color: #F4F7F6;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #25564B;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form button:hover {
+  background-color: #1b4035;
+}
+
+/* SECTION 4: Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
